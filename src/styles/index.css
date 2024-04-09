@@ -1,12 +1,90 @@
+.todo-container {
+    display: -webkit-box;
+    justify-content: center;
+    height: 10rem;
+    align-items: center;
+    flex-direction: column;
+    width: 95%;
+    border-radius: 25px;
+    padding: 1.5rem;
+    flex-direction: column;
+}
 
-/* 
+.todo-input {
+    width: 85%;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+}
 
-    You can write your own styles here...
-    
-    
-    ...Or you can use the import command to include 
-    other sylesheets into your bunde as well, e.j:
-    
-    import 'relative/path/to/stylesheet.scss';
+.todo-item {
+    width: 100%;
+}
 
-*/
+.container-custom {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    height: 16rem !important;
+    margin: auto;
+    padding: 2px;
+    border-radius: 20px;
+    margin-top: 7rem;
+}
+
+.container-tareas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.btn-delete {
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.list-group-item {
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+}
+
+.list-group-item:hover .btn-delete {
+    opacity: 1;
+}
+
+.list-group-item:hover {
+    transform: scale(1.05);
+    transition: transform 0.4s ease-in-out;
+    cursor: pointer;
+    z-index: 2;
+    box-shadow: 0px 0px 5px rgba(176, 176, 176, 0.763);
+}
+
+.title-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    margin-bottom: 1rem;
+}
+
+.project-title {
+    font-size: 30px;
+    padding: 1rem;
+    color: rgb(40, 40, 40)
+}
+
+.title {
+    font-size: 44px;
+    text-align: center;
+    color: #3a8aff;
+    font-weight: 300;
+}
+
+.tareas-message {
+    font-size: 20px;
+    font-weight: 300;
+    font-style: italic;
+}
+
+.delete-symbol {
+    font-size: 15px;
+}
